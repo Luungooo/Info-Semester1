@@ -13,5 +13,6 @@ int main() {
 	A = 2 * pi * r * r + 2 * pi * r * h;
 	V = pi * r * r * h;
 	printf("Die Oberfläche des Zylinders beträgt: %f\n", A); 
-	printf("Das Volumen des Zylinders beträgt: %f\n", V); 
+	printf("Das Volumen des Zylinders beträgt: %f\n", V);
+	return 0;
 }
