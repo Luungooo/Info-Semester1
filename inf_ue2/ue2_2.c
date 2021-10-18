@@ -6,9 +6,9 @@ int main() {
 	float h;
 	float A;
 	float V;
-	printf("Geben Sie den Radius des Zylinders ein:\n");
+	printf("Geben Sie den Radius des Zylinders ein: ");
 	scanf("%f", &r);
-	printf("Geben Sie die Höhe des Zylinders ein:\n");
+	printf("Geben Sie die Höhe des Zylinders ein: ");
 	scanf("%f", &h);
 	A = 2 * pi * r * r + 2 * pi * r * h;
 	V = pi * r * r * h;
