@@ -19,7 +19,7 @@ int main() {
 				break;
 			case 'C':
 				printf("Enter temperature in Fahrenheit\n");
-				scanf("%f%*c",&Tf);			
+				scanf("%f%*c",&Tf);
 				Tc = 5.0 * (Tf - 32.0) / 9.0;
 				printf("C = %.1f\n", Tc);
 				break;
