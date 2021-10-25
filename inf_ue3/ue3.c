@@ -5,6 +5,7 @@ int main() {
 	float Tc;
 	float Tf;
 	char selection;
+	printf("*****************************************************\n");
 	do {
 		printf("Type F if you want to convert Celsius to Fahrenheit\n");
 		printf("Type C to convert Fahrenheit to Celsius\n");
@@ -24,6 +25,7 @@ int main() {
 				printf("C = %.1f\n", Tc);
 				break;
 		}
+		printf("*****************************************************\n");
 	} while (selection == 'C' || selection == 'F');
 	printf("No valid input detected. Exiting Program.\n");
 	return 0;
