@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "geomittel.h"
-#include <math.h>
 
 int main() {
     double n1 = 7;
