@@ -1,14 +1,14 @@
-#include "geomittel.h"
+#include "geoAverage.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-double geoMittel(double zahl1, double zahl2) {
-    if(zahl1 < 0 || zahl2 < 0) {
+double geoAverage(double number1, double number2) {
+    if(number1 < 0 || number2 < 0) {
         printf("Error: Numbers can't be negative.\n");
         printf("Exiting Program.\n");
         exit(EXIT_FAILURE);
     }
-    double ans = sqrt(zahl1 * zahl2);
+    double ans = sqrt(number1 * number2);
     return ans;
 }
