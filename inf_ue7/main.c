@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main() {
-    const double PI = 2*acos(0.0);
+    const double PI = 2 * acos(0.0);
     double a[3];
     double b[3];
     double scalarProduct;
