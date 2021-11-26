@@ -2,6 +2,7 @@
 #include <math.h>
 
 int main() {
+    const double PI = 2*acos(0.0);
     double a[3];
     double b[3];
     double scalarProduct;
@@ -24,10 +25,14 @@ int main() {
     }
     valueA = sqrt(pow(a[0], 2) + pow(a[1], 2) + pow(a[2], 2));
     valueB = sqrt(pow(b[0], 2) + pow(b[1], 2) + pow(b[2], 2));
-    phase = acosh(scalarProduct / (valueA * valueB));
     crossProduct[0] = a[1] * b[2] - a[2] * b[1];
     crossProduct[1] = a[2] * b[0] - a[0] * b[2];
     crossProduct[2] = a[0] * b[1] - a[1] * b[0];
+    if (crossProduct[0] == 0 && crossProduct[1] == 0 && crossProduct[2] == 0) {
+        phase = 0;
+    } else {
+        phase = acos(scalarProduct / (valueA * valueB)) * 180 / PI;
+    }
     printf("Scalar product:\n%lf\n", scalarProduct);
     printf("Value of a:\n%lf\n", valueA);
     printf("Value of b:\n%lf\n", valueB);
