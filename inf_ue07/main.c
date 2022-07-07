@@ -13,12 +13,12 @@ int main() {
     printf("Input first vector:\n");
     for (int i = 0; i < 3; i++) {
         printf("Row %d: ", i + 1);
-        scanf("%lf", &a[i]);
+        scanf("%lf%*c", &a[i]);
     }
     printf("Input second vector:\n");
     for (int i = 0; i < 3; i++) {
         printf("Row %d: ", i + 1);
-        scanf("%lf", &b[i]);
+        scanf("%lf%*c", &b[i]);
     }
     for (int i = 0; i < 3; i++) {
         scalarProduct += a[i] * b[i];
