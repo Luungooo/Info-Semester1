@@ -1,5 +1,5 @@
-#ifndef INF_UE11_VEHICLE_H
-#define INF_UE11_VEHICLE_H
+#ifndef VEHICLE_H
+#define VEHICLE_H
 
 typedef struct {
     char name[50];
@@ -8,4 +8,4 @@ typedef struct {
     unsigned int topSpeed;
 } vehicle;
 
-#endif //INF_UE11_VEHICLE_H
+#endif //VEHICLE_H

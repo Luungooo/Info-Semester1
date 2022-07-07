@@ -1,9 +1,10 @@
-cmake_minimum_required(VERSION 3.20)
-project (inf_ue4 C)
+cmake_minimum_required(VERSION 3.22)
+project(inf_ue04 C)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_EXTENSIONS False)
+set(SRC_FILES main.c geoAverage.c)
 
-set(SOURCE_FILES main.c geoAverage.c)
+add_executable(${PROJECT_NAME} ${SRC_FILES})
 
-add_executable(inf_ue4 ${SOURCE_FILES})
-target_link_libraries(inf_ue4 PRIVATE m)
+target_compile_options(${PROJECT_NAME} PRIVATE -fcolor-diagnostics -Wall -Winvalid-pch -Wextra -Wpedantic)

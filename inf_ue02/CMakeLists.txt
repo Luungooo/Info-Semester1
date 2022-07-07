@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(inf_ue08 C)
+project(inf_ue02 C)
 
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_C_EXTENSIONS False)

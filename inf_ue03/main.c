@@ -15,13 +15,13 @@ int main() {
 			case 'F':
 				printf("Enter temperature in Celsius\n");
 				scanf("%f%*c",&Tc);
-				Tf = 9.0 * Tc / 5.0 + 32.0;
+				Tf = 9.0f * Tc / 5.0f + 32.0f;
 				printf("F = %.1f\n", Tf);
 				break;
 			case 'C':
 				printf("Enter temperature in Fahrenheit\n");
 				scanf("%f%*c",&Tf);
-				Tc = 5.0 * (Tf - 32.0) / 9.0;
+				Tc = 5.0f * (Tf - 32.0f) / 9.0f;
 				printf("C = %.1f\n", Tc);
 				break;
 		}

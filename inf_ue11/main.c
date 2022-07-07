@@ -78,17 +78,17 @@ int main() {
     vehicle bmw1;
     strcpy(bmw1.name, "BMW G20");
     bmw1.power = 134;
-    bmw1.displacement = 1.998;
+    bmw1.displacement = 1.998f;
     bmw1.topSpeed = 238;
 
     vehiclePrint(&bmw1);
 
-    vehicle mercedes1 = vehicleCreate("Mercedes Baureihe 222", 225, 3.498, 250);
+    vehicle mercedes1 = vehicleCreate("Mercedes Baureihe 222", 225, 3.498f, 250);
     vehiclePrint(&mercedes1);
 
     vehicleCompare(&bmw1, &mercedes1);
 
-    vehicleTune(&bmw1, 179, 2.399, 250);
+    vehicleTune(&bmw1, 179, 2.399f, 250);
     vehiclePrint(&bmw1);
 
     vehicleSwapEngines(&bmw1, &mercedes1);

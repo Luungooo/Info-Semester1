@@ -22,8 +22,8 @@ int main() {
     char *ptr;
     int powerTwo;
     int powerThree;
-    fp = fopen("../zahlenfolge.txt", "w+");
-    fp2 = fopen("../verarbeitet.txt", "w+");
+    fp = fopen("zahlenfolge.txt", "w+");
+    fp2 = fopen("verarbeitet.txt", "w+");
 
 
     for (int i = 0; i < 10; i++) {

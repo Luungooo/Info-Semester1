@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 int berechneZ(int x, int y) {
     int z = x * y;
     return z;
