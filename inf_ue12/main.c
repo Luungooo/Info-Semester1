@@ -2,13 +2,11 @@
 #include <stdlib.h>
 #include <math.h>
 
-char * toArray(int number)
-{
+char* toArray(int number) {
     int n = log10(number) + 1;
     int i;
-    char *numberArray = calloc(n, sizeof(char));
-    for (i = n-1; i >= 0; --i, number /= 10)
-    {
+    char* numberArray = calloc(n, sizeof(char));
+    for (i = n - 1; i >= 0; --i, number /= 10) {
         numberArray[i] = (number % 10) + '0';
     }
     return numberArray;
@@ -16,10 +14,10 @@ char * toArray(int number)
 
 int main() {
     char ch[50];
-    FILE *fp;
-    FILE *fp2;
+    FILE* fp;
+    FILE* fp2;
     int num;
-    char *ptr;
+    char* ptr;
     int powerTwo;
     int powerThree;
     fp = fopen("zahlenfolge.txt", "w+");
@@ -32,7 +30,7 @@ int main() {
 
     rewind(fp);
 
-    while((fgets(ch,50,fp)) != NULL) {
+    while ((fgets(ch, 50, fp)) != NULL) {
         num = strtol(ch, &ptr, 10);
         powerTwo = num * num;
         powerThree = num * num * num;

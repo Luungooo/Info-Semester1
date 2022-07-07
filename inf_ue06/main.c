@@ -9,7 +9,7 @@ void isPrime(unsigned long long num) {
                 num = num / i;
             }
         }
-    }else {
+    } else {
         for (int i = 3; num > 1; i += 2) {
             while (num % i == 0) {
                 printf("%d ", i);
@@ -18,6 +18,7 @@ void isPrime(unsigned long long num) {
         }
     }
 }
+
 /*
 void isPrime2(unsigned long long num) {
     unsigned long long firstFactor = 1;

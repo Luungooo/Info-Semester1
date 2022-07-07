@@ -3,7 +3,7 @@
 
 #include "vehicle.h"
 
-void vehiclePrint(vehicle *vehicle1) {
+void vehiclePrint(vehicle* vehicle1) {
     printf("\n%s\n", vehicle1->name);
     printf("%d\n", vehicle1->power);
     printf("%.3f\n", vehicle1->displacement);
@@ -19,7 +19,7 @@ vehicle vehicleCreate(char name[50], unsigned int power, float displacement, uns
     return vehicle1;
 }
 
-int vehicleCompare(vehicle *a, vehicle *b) {
+int vehicleCompare(vehicle* a, vehicle* b) {
     printf("\n%s vs. ", a->name);
     printf("%s\n", b->name);
 
@@ -37,7 +37,7 @@ int vehicleCompare(vehicle *a, vehicle *b) {
     }
 }
 
-int vehicleTune(vehicle *a, unsigned int power, float displacement, unsigned int topSpeed) {
+int vehicleTune(vehicle* a, unsigned int power, float displacement, unsigned int topSpeed) {
     int counter = 0;
 
     if (power != 0) {
@@ -57,7 +57,7 @@ int vehicleTune(vehicle *a, unsigned int power, float displacement, unsigned int
     return 0;
 }
 
-void vehicleSwapEngines(vehicle *a, vehicle *b) {
+void vehicleSwapEngines(vehicle* a, vehicle* b) {
     unsigned int temp1;
     float temp2;
 

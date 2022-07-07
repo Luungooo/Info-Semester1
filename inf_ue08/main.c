@@ -55,7 +55,7 @@ int main() {
         resultVector[i] = result;
     }
 
-    for (unsigned int i = 0; i < rows ; i++) {
+    for (unsigned int i = 0; i < rows; i++) {
         printf("%d\n", resultVector[i]);
     }
     return 0;

@@ -31,7 +31,7 @@ unsigned long long facultyFor(unsigned long long n) {
 int main() {
     unsigned long long result = 1;
     unsigned long long n = 0;
-    while(ULLONG_MAX / result > n) {
+    while (ULLONG_MAX / result > n) {
         n++;
         result = faculty(n);
     }
